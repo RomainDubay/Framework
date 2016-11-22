@@ -1,0 +1,51 @@
+{
+    "css": {
+        "files": {
+            "src": "./src/scss/main.scss",
+            "dest": "./public/css/",
+            "filename": "main.css"
+        },
+        "watch": "src/scss/**/*.scss",
+        "options": {
+            "cssNano": {
+                "autoprefixer": {
+                    "add": true,
+                    "browsers": [
+                        "last 2 version",
+                        "ie 9",
+                        "android >= 4"
+                    ]
+                }
+            }
+        }
+    },
+    "js": {
+        "files": {
+            "src": "./src/js/main.js",
+            "dest": "./public/js/",
+            "filename": "main.js"
+        },
+        "webpack": {
+            "modulesDirectories": [
+                ".",
+                "node_modules",
+                "bower_components"
+            ]
+        },
+        "watch": "src/js/**/*.js"
+    },
+    "tasks" : {
+        "build": [
+          "build:css",
+          "build:js"
+        ],
+        "default": [
+            "build",
+            "watch"
+        ],
+        "watch": [
+            "watch:css",
+            "watch:js"
+        ]
+    }
+}

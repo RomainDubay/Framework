@@ -1,0 +1,17 @@
+{
+  "name": "Framework",
+  "description": "Framework for projects",
+  "main": "index.js",
+  "authors": [
+    "Romain Dubay"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
