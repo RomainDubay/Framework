@@ -1,0 +1,6 @@
+@charset 'UTF-8';
+
+@mixin size($width, $height: $width) {
+  height: $height;
+  width: $width;
+}
